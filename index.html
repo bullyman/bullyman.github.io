@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>БашАвтоАкадемия | Автошкола в Уфе</title>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="hero.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__top container">
+      <div class="logo">
+        <img src="logo.svg" alt="БашАвтоАкадемия" class="logo__img">
+      </div>
+      <div class="header__contacts desktop-only">
+        <a href="tel:+79373001070" class="header__phone">
+          <span class="iconify" data-icon="fa6-solid:phone"></span> +7 (937) 300-10-70
+        </a>
+        <div class="header__address">
+          <span class="iconify" data-icon="fa6-solid:location-dot"></span> г.Уфа, ул.Коммунистическая 65
+        </div>
+      </div>
+      <button class="btn btn--outline desktop-only" type="button" onclick="alert('Форма отзыва появится позже')">
+        <span class="iconify" data-icon="fa6-solid:star"></span>&nbsp;&nbsp;Оставить отзыв
+      </button>
+      <button class="burger" id="burgerBtn" aria-label="Меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+    <div class="header__bottom container desktop-only">
+      <nav class="nav">
+        <a class="nav__link" href="#about">О нас</a>
+        <a class="nav__link" href="#programs">Обучение</a>
+        <a class="nav__link" href="#instructors">Инструкторы</a>
+        <a class="nav__link" href="#autos">Автомобили</a>
+        <a class="nav__link" href="#gallery">Фото</a>
+        <a class="nav__link" href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="nav mobile-nav">
+        <a class="nav__link" href="#about">О нас</a>
+        <a class="nav__link" href="#programs">Обучение</a>
+        <a class="nav__link" href="#instructors">Инструкторы</a>
+        <a class="nav__link" href="#autos">Автомобили</a>
+        <a class="nav__link" href="#gallery">Фото</a>
+        <a class="nav__link" href="#contacts">Контакты</a>
+      </nav>
+      <div class="mobile-contacts">
+        <a href="tel:+79373001070" class="mobile-phone">
+          <span class="iconify" data-icon="fa6-solid:phone"></span> +7 (937) 300-10-70
+        </a>
+        <div class="mobile-address">
+          <span class="iconify" data-icon="fa6-solid:location-dot"></span> Коммунистическая 65
+        </div>
+      </div>
+      <button class="btn btn--outline" type="button" onclick="alert('Форма отзыва появится позже')">
+        <span class="iconify" data-icon="fa6-solid:star"></span>&nbsp;&nbsp;Оставить отзыв
+      </button>
+    </div>
+  <section class="hero">
+    <div class="hero__inner container">
+      <div class="hero__content">
+        <h1 class="hero__title">Стань водителем<br><span class="hero__accent">с первого урока</span></h1>
+        <p class="hero__text">Современная автошкола в Уфе: теория онлайн, практика на новых автомобилях и удобный график занятий.</p>
+        <div class="hero__stats">
+          <article class="hero__stat">
+            <div class="hero__stat-value">98%</div>
+            <div class="hero__stat-body">
+              <h3 class="hero__stat-title">сдают с первого раза</h3>
+              <p class="hero__stat-text">Подготовка по реальным маршрутам и понятная система обучения.</p>
+            </div>
+          </article>
+          <article class="hero__stat">
+            <div class="hero__stat-value">3 мес</div>
+            <div class="hero__stat-body">
+              <h3 class="hero__stat-title">средний срок обучения</h3>
+              <p class="hero__stat-text">Онлайн-теория, гибкое расписание и практика в удобное время.</p>
+            </div>
+          </article>
+        </div>
+        <div class="hero__button">
+          <a href="tel:+79373001070" class="btn btn--hero" role="button">Начать обучение</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <img class="hero__img" src="_attach/lancer.png" alt="Автомобиль" loading="lazy">
+        <div class="hero__promo">
+          <div class="hero__promo-value">−20%</div>
+          <div class="hero__promo-body">
+            <h3 class="hero__promo-title">Акция: ранняя запись</h3>
+            <p class="hero__promo-text">Скидка 20% при оплате полного курса до 15 апреля.<br>Успейте забронировать место!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="about">
+    <div class="features__container container">
+      <h2 class="features__title section-title">почему выбирают нас</h2>
+      <div class="features__grid card-grid">
+        <div class="card card--slide-hover">
+          <div class="card__media" style="background-image: url('https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?auto=format&fit=crop&w=1200&q=80');"></div>
+          <h3 class="card__title">доступная теория</h3>
+          <div class="card__hover">
+            <p class="card__text">Учите ПДД легко, никаких скучных лекций, билеты ПДД с разбором ошибок.</p>
+            <div class="card__badge">доступно и понятно</div>
+          </div>
+          <div class="card__corner"></div>
+        </div>
+        <div class="card card--slide-hover">
+          <div class="card__media" style="background-image: url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80');"></div>
+          <h3 class="card__title">наши автомобили</h3>
+          <div class="card__hover">
+            <p class="card__text">Практика на достойных автомобилях механика и автомат на выбор. Все машины оборудованы дополнительными педалями.</p>
+            <div class="card__badge">механика или автомат</div>
+          </div>
+          <div class="card__corner"></div>
+        </div>
+        <div class="card card--slide-hover">
+          <div class="card__media" style="background-image: url('https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=80');"></div>
+          <h3 class="card__title">удобный график</h3>
+          <div class="card__hover">
+            <p class="card__text">Занимайтесь утром, днем или вечером. Подберем удобное время с инструктором, совмещайте с работой или учебой.</p>
+            <div class="card__badge">время 7:00 - 21:00</div>
+          </div>
+          <div class="card__corner"></div>
+        </div>
+        <div class="card card--slide-hover">
+          <div class="card__media" style="background-image: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1200&q=80');"></div>
+          <h3 class="card__title">Высокий процент сдачи</h3>
+          <div class="card__hover">
+            <p class="card__text">Более 90% наших учеников успешно сдают экзамен с первой попытки. Мы готовим к реальному движению, а не просто катаем вас по кругу.</p>
+            <div class="card__badge">сдай с первого раза</div>
+          </div>
+          <div class="card__corner"></div>
+        </div>
+        <div class="card card--slide-hover">
+          <div class="card__media" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80');"></div>
+          <h3 class="card__title">наши инструкторы</h3>
+          <div class="card__hover">
+            <p class="card__text">Средний стаж инструкторов — 7 лет, все имеют сертификаты и регулярно повышают квалификацию. Вежливые и терпеливые.</p>
+            <div class="card__badge">бронебойное терпение</div>
+          </div>
+          <div class="card__corner"></div>
+        </div>
+        <div class="card card--slide-hover">
+          <div class="card__media" style="background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80');"></div>
+          <h3 class="card__title">отзывы наших учеников</h3>
+          <div class="card__hover">
+            <p class="card__text">Если у вас есть сомнения, просто почитайте реальные отзывы наших учеников, мы есть на Yandex, Авито, 2ГИС.</p>
+            <div class="card__badge">Мы любим учить</div>
+          </div>
+          <div class="card__corner"></div>
+        </div>
+        <div class="card card--fullwidth card--b card--feature">
+          <div class="card__media card__media--banner card__media--with-overlay">
+            <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=1600&q=80" alt="Условия обучения">
+            <h3 class="card__title-overlay">Условия обучения</h3>
+          </div>
+          <div class="card__text">
+            <ul class="graph-list">
+              <li>Срок обучения до 3-х месяцев в зависимости от выбора группы.</li>
+              <li>Возраст от 16 лет (Место прописки и национальность значения не имеют).</li>
+              <li>Нужно предоставить паспорт, снилс, медицинская справка, фото 3×4.</li>
+              <li>Выбираем группу обучения</li>
+              <li>Теоретическая подготовка и практические занятия на автомобиле (МКПП/АКПП).</li>
+              <li>Сдача внутренних экзаменов в автошколе.</li>
+              <li>Сдача экзаменов в ГИБДД.</li>
+              <li>Получение водительского удостоверения.</li>
+            </ul>
+          </div>
+          <div class="card__actions">
+            <button class="btn btn--service" type="button">записаться</button>
+          </div>
+          <div class="card__corner"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="programs">
+    <div class="services__container container">
+      <h2 class="services__title section-title">программы обучения</h2>
+      <div class="card card--fullwidth card--b card--service">
+        <div class="card__media card__media--banner card__media--with-overlay">
+          <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=1600&q=80" alt="Теоретическое обучение">
+          <h3 class="card__title-overlay">Теоретическое обучение</h3>
+        </div>
+        <p class="card__text">Полный пакет: теория, практика, подготовка к экзаменам в ГИБДД. Индивидуальный график и персональный куратор.</p>
+        <div class="card__actions">
+          <div class="card__price">54 900 ₽</div>
+          <button class="btn btn--service" type="button">записаться</button>
+        </div>
+        <div class="card__pattern"></div>
+      </div>
+      <div class="services__grid">
+        <div class="card card--service card--b">
+          <div class="card__media card__media--banner card__media--with-overlay">
+            <img src="https://images.unsplash.com/photo-1693291539335-0a289dead8e2?auto=format&fit=crop&w=1600&q=80" alt="категория B Механика">
+            <h3 class="card__title-overlay">категория B Механика</h3>
+          </div>
+          <p class="card__text">Легковой автомобиль. 3 месяца теории + 56 часов практики.</p>
+          <div class="card__actions">
+            <div class="card__price">35 900 ₽</div>
+            <button class="btn btn--service" type="button">записаться</button>
+          </div>
+          <div class="card__pattern"></div>
+        </div>
+        <div class="card card--service card--b">
+          <div class="card__media card__media--banner card__media--with-overlay">
+            <img src="https://images.unsplash.com/photo-1572360721733-238badbb0dcd?auto=format&fit=crop&w=1600&q=80" alt="категория B Автомат">
+            <h3 class="card__title-overlay">категория B Автомат</h3>
+          </div>
+          <p class="card__text">Легковой автомобиль. 3 месяца теории + 56 часов практики.</p>
+          <div class="card__actions">
+            <div class="card__price">37 900 ₽</div>
+            <button class="btn btn--service" type="button">записаться</button>
+          </div>
+          <div class="card__pattern"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="instructors" id="instructors">
+    <div class="instructors__container container">
+      <h2 class="instructors__title section-title">наши инструкторы</h2>
+      <div class="instructors-slider" data-instructors-slider>
+        <div class="instructors-slider__viewport">
+          <div class="instructors-slider__track">
+            <div class="instructors-slide">
+              <div class="card card--instructor">
+                <div class="card__photo"><img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=200&q=80" alt="Иван Петров"></div>
+                <h3 class="card__title">Иван Петров</h3>
+                <p class="card__text">Инструктор по вождению, стаж 12 лет. Категории B, C. Обучает безопасному стилю вождения.</p>
+              </div>
+            </div>
+            <div class="instructors-slide">
+              <div class="card card--instructor">
+                <div class="card__photo"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80" alt="Елена Смирнова"></div>
+                <h3 class="card__title">Елена Смирнова</h3>
+                <p class="card__text">Инструктор с 8-летним стажем. Специализация — автомат, городской трафик. Спокойная и терпеливая.</p>
+              </div>
+            </div>
+            <div class="instructors-slide">
+              <div class="card card--instructor">
+                <div class="card__photo"><img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=200&q=80" alt="Алексей Иванов"></div>
+                <h3 class="card__title">Алексей Иванов</h3>
+                <p class="card__text">Мастер спорта по автоспорту. Обучает контраварийному вождению и сложным манёврам.</p>
+              </div>
+            </div>
+            <div class="instructors-slide">
+              <div class="card card--instructor">
+                <div class="card__photo"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Мария Кузнецова"></div>
+                <h3 class="card__title">Мария Кузнецова</h3>
+                <p class="card__text">Инструктор для начинающих, спокойная и понятная подача. Стаж 6 лет. Помогает преодолеть страх.</p>
+              </div>
+            </div>
+            <div class="instructors-slide">
+              <div class="card card--instructor">
+                <div class="card__photo"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Дмитрий Соколов"></div>
+                <h3 class="card__title">Дмитрий Соколов</h3>
+                <p class="card__text">Обучает на механике, подготовка к экзамену в ГИБДД с первого раза. Стаж 10 лет.</p>
+              </div>
+            </div>
+            <div class="instructors-slide">
+              <div class="card card--instructor">
+                <div class="card__photo"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Ольга Новикова"></div>
+                <h3 class="card__title">Ольга Новикова</h3>
+                <p class="card__text">Психолог вождения, помогает преодолеть страх. Индивидуальный подход, бережное обучение.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="instructors-slider__controls">
+          <button class="instructors-slider__arrow instructors-slider__arrow--prev" type="button"><span class="iconify" data-icon="fa6-solid:arrow-left"></span></button>
+          <div class="instructors-slider__dots"></div>
+          <button class="instructors-slider__arrow instructors-slider__arrow--next" type="button"><span class="iconify" data-icon="fa6-solid:arrow-right"></span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="autos" id="autos">
+    <div class="autos__container container">
+      <h2 class="autos__title section-title">наши авто</h2>
+      <div class="autos-slider" data-autos-slider>
+        <div class="autos-slider__viewport">
+          <div class="autos-slider__track">
+            <article class="autos-slide is-active">
+              <div class="autos-slide__media"><img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1200&q=80" alt="Hyundai Solaris"></div>
+              <div class="autos-slide__content">
+                <div class="autos-slide__plate autos-slide__plate--top">Hyundai Solaris</div>
+                <p class="autos-slide__text">Комфортный седан для уверенного старта. Доступен для обучения на механике и автомате.</p>
+                <div class="autos-slide__plate autos-slide__plate--bottom">механика / автомат</div>
+              </div>
+            </article>
+            <article class="autos-slide">
+              <div class="autos-slide__media"><img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80" alt="Kia Rio"></div>
+              <div class="autos-slide__content">
+                <div class="autos-slide__plate autos-slide__plate--top">Kia Rio</div>
+                <p class="autos-slide__text">Надёжный и манёвренный автомобиль, отлично подходит для городского режима обучения.</p>
+                <div class="autos-slide__plate autos-slide__plate--bottom">Автоматическая трансмиссия</div>
+              </div>
+            </article>
+            <article class="autos-slide">
+              <div class="autos-slide__media"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="Skoda Octavia"></div>
+              <div class="autos-slide__content">
+                <div class="autos-slide__plate autos-slide__plate--top">Skoda Octavia</div>
+                <p class="autos-slide__text">Просторный автомобиль с предсказуемым управлением и комфортной посадкой.</p>
+                <div class="autos-slide__plate autos-slide__plate--bottom">Автоматическая трансмиссия</div>
+              </div>
+            </article>
+            <article class="autos-slide">
+              <div class="autos-slide__media"><img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1200&q=80" alt="Volkswagen Polo"></div>
+              <div class="autos-slide__content">
+                <div class="autos-slide__plate autos-slide__plate--top">Volkswagen Polo</div>
+                <p class="autos-slide__text">Удобный вариант для отработки городских маршрутов, парковки и базовых манёвров.</p>
+                <div class="autos-slide__plate autos-slide__plate--bottom">Автоматическая трансмиссия</div>
+              </div>
+            </article>
+            <article class="autos-slide">
+              <div class="autos-slide__media"><img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=1200&q=80" alt="Renault Logan"></div>
+              <div class="autos-slide__content">
+                <div class="autos-slide__plate autos-slide__plate--top">Renault Logan</div>
+                <p class="autos-slide__text">Практичный седан с простой и понятной управляемостью для базовой практики.</p>
+                <div class="autos-slide__plate autos-slide__plate--bottom">Автоматическая трансмиссия</div>
+              </div>
+            </article>
+            <article class="autos-slide">
+              <div class="autos-slide__media"><img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80" alt="Lada Vesta"></div>
+              <div class="autos-slide__content">
+                <div class="autos-slide__plate autos-slide__plate--top">Lada Vesta</div>
+                <p class="autos-slide__text">Современный автомобиль для комфортного обучения в разных дорожных условиях.</p>
+                <div class="autos-slide__plate autos-slide__plate--bottom">Автоматическая трансмиссия</div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="autos-slider__controls">
+          <button class="autos-slider__arrow autos-slider__arrow--prev" type="button"><span class="iconify" data-icon="fa6-solid:arrow-left"></span></button>
+          <div class="autos-slider__dots"></div>
+          <button class="autos-slider__arrow autos-slider__arrow--next" type="button"><span class="iconify" data-icon="fa6-solid:arrow-right"></span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="gallery__container container">
+      <h2 class="gallery__title section-title">Фото наших учеников</h2>
+      <div class="gallery-grid" id="galleryGrid"></div>
+      <div class="gallery__more"></div>
+    </div>
+    <div class="lightbox" id="lightbox">
+      <span class="lightbox__close">&times;</span>
+      <img class="lightbox__image" alt="Увеличенное фото">
+      <div class="lightbox__caption"></div>
+      <div class="lightbox__nav">
+        <button class="lightbox__prev">&#10094;</button>
+        <button class="lightbox__next">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <div class="contacts__container container">
+      <h2 class="contacts__title section-title">контакты с нами</h2>
+      <div class="contacts__callback-form">
+        <h3 class="contacts__callback-title">запись на обучение</h3>
+        <div class="contacts__callback-subtitle">Оставьте заявку — мы перезвоним и подберем удобное время</div>
+        <form id="callbackForm" class="contacts__callback-form-elements" action="#" method="post">
+          <div class="contacts__callback-row">
+            <input class="contacts__callback-input" type="text" placeholder="Ваше имя" required>
+          </div>
+          <div class="contacts__callback-row">
+            <input class="contacts__callback-input" type="tel" placeholder="Телефон *" required>
+          </div>
+          <div class="contacts__callback-row">
+            <textarea class="contacts__callback-textarea" rows="3" placeholder="Удобное время для звонка (необязательно)"></textarea>
+          </div>
+          <div class="contacts__callback-row contacts__callback-row--checkbox">
+            <label class="contacts__callback-checkbox-label">
+              <input class="contacts__callback-checkbox" type="checkbox" required> Согласие на обработку данных
+            </label>
+          </div>
+          <div class="contacts__callback-row">
+            <button class="btn btn--submit" type="submit">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- БЛОК ОТЗЫВОВ -->
+      <div class="reviews">
+        <h3 class="reviews__title">что говорят наши ученики</h3>
+        <div class="reviews__grid">
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Анна">
+              </div>
+              <div class="review-card__info">
+                <div class="review-card__name">Анна С.</div>
+                <div class="review-card__rating">★★★★★</div>
+              </div>
+            </div>
+            <p class="review-card__text">"Спасибо автошколе за отличную подготовку! Сдала экзамен с первого раза. Инструктор объяснял всё спокойно и понятно. Теорию учила онлайн — очень удобно."</p>
+          </div>
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Дмитрий">
+              </div>
+              <div class="review-card__info">
+                <div class="review-card__name">Дмитрий К.</div>
+                <div class="review-card__rating">★★★★★</div>
+              </div>
+            </div>
+            <p class="review-card__text">"Отличная автошкола! Удобный график занятий, можно выбрать механику или автомат. Инструкторы профессионалы, машины новые. Рекомендую!"</p>
+          </div>
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">
+                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Екатерина">
+              </div>
+              <div class="review-card__info">
+                <div class="review-card__name">Екатерина В.</div>
+                <div class="review-card__rating">★★★★★</div>
+              </div>
+            </div>
+            <p class="review-card__text">"Занималась с нуля, боялась садиться за руль. Благодаря терпеливому инструктору Елене Смирновой теперь уверенно вожу по городу. Спасибо!"</p>
+          </div>
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">
+                <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Максим">
+              </div>
+              <div class="review-card__info">
+                <div class="review-card__name">Максим Т.</div>
+                <div class="review-card__rating">★★★★★</div>
+              </div>
+            </div>
+            <p class="review-card__text">"Хорошее соотношение цены и качества. Теория онлайн — супер, можно учить в любое время. Практика на машине с кондиционером, что летом важно. Сдал с первого раза."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts__form-fullwidth">
+        <h3 class="contacts__form-title">оставьте свой отзыв</h3>
+        <div class="contacts__form-subtitle">Ваш отзыв поможет нам и другим сделать правильный выбор</div>
+        <form id="reviewForm" class="contacts__callback-form-elements" action="#" method="post">
+          <div class="contacts__callback-row">
+            <input class="contacts__callback-input" type="text" placeholder="Ваше имя" required>
+          </div>
+          <div class="contacts__callback-row" id="mathCaptchaBlock">
+            <div class="contacts__callback-label" style="margin-bottom: 8px; font-weight: 500;">Проверочный вопрос: <span id="mathQuestionText">...</span>?</div>
+            <input class="contacts__callback-input" type="number" id="mathAnswerInput" placeholder="Ваш ответ (только число)" required>
+          </div>
+          <div class="contacts__callback-row">
+            <textarea class="contacts__callback-textarea" rows="4" placeholder="Ваш отзыв" required></textarea>
+          </div>
+          <div class="contacts__callback-row contacts__callback-row--checkbox">
+            <label class="contacts__callback-checkbox-label">
+              <input class="contacts__callback-checkbox" type="checkbox" required> Согласие на обработку данных
+            </label>
+          </div>
+          <div class="contacts__callback-row">
+            <button class="btn btn--submit" type="submit">Отправить отзыв</button>
+          </div>
+        </form>
+      </div>
+      
+      <div class="contacts__map-fullwidth">
+        <div class="map-container">
+          <iframe 
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c6f7e8a9b0c1d2e3f4g5h6i7j8k9l0m&source=constructor" 
+            width="100%" 
+            height="400" 
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="contacts__footer">
+        <div class="logo">
+          <img src="logo.svg" alt="БашАвтоАкадемия" class="logo__img">
+        </div>
+        <div class="contacts__footer-center">
+          <div class="contacts__footer-links">
+            <a class="contacts__footer-link" href="#about">о нас</a>
+            <a class="contacts__footer-link" href="#programs">обучение</a>
+            <a class="contacts__footer-link" href="#instructors">инструкторы</a>
+            <a class="contacts__footer-link" href="#autos">автомобили</a>
+            <a class="contacts__footer-link" href="#gallery">фото</a>
+            <a class="contacts__footer-link" href="#contacts">контакты</a>
+          </div>
+          <div class="contacts__footer-copyright">© 2026 | Автошкола "БашАвтоакадемия"</div>
+        </div>
+        <div class="contacts__footer-placeholder"></div>
+      </div>
+    </div>
+    <div class="contacts__footer-line"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

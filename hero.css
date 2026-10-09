@@ -1,0 +1,346 @@
+/* ==========================================================================
+   HERO — финальная версия, без мусора
+   ========================================================================== */
+.hero {
+  position: relative;
+  overflow-x: hidden;
+  background: #f4f8f1;
+  border-bottom: 1px solid var(--border-soft);
+  padding: 40px 0 20px; /* высота определяется содержимым */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #e2efdf;
+  clip-path: polygon(100% 0, 100% 100%, 36% 100%, 78% 0);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 40px;
+}
+
+.hero__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+}
+
+.hero__title {
+  font-size: clamp(2.2rem, 3.5vw, 3.4rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.05;
+  margin-bottom: 24px;
+  color: var(--text-dark);
+  max-width: 720px;
+}
+
+.hero__accent {
+  display: block;
+  color: var(--green-soft);
+  transform: translateX(160px);
+  white-space: nowrap;
+}
+
+.hero__text {
+  font-size: 1.2rem;
+  color: var(--text-soft);
+  max-width: 520px;
+  margin-bottom: 40px;
+}
+
+.hero__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 560px;
+  margin-bottom: 0; /* кнопка идёт следом */
+}
+
+.hero__stat {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-soft);
+}
+
+.hero__stat-value {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--green-soft);
+}
+
+.hero__stat-body {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.hero__stat-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  color: var(--text-dark);
+}
+
+.hero__stat-text {
+  color: var(--text-soft);
+}
+
+/* Кнопка внутри левой колонки */
+.hero__button {
+  margin-top: 30px;
+}
+
+.hero__visual {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 0 20px 0;
+}
+
+.hero__img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 30px 35px rgba(31, 42, 31, 0.14));
+  margin-bottom: 20px;
+}
+
+.hero__promo {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 20px;
+  width: 100%;
+  padding: 16px 20px 20px 0;
+  border-top: 1px solid var(--border-soft);
+  background: transparent;
+  margin: 0 0 0 40px;
+}
+
+.hero__promo-value {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #6fa8dc;
+  background: transparent;
+  display: inline-block;
+  padding: 8px 0;
+  text-align: center;
+  align-self: start;
+  border: none;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.hero__promo-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__promo-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: var(--green-soft);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.hero__promo-text {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   Адаптивность
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .hero__accent {
+    transform: translateX(80px);
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 30px 0 20px;
+  }
+
+  .hero::before {
+    clip-path: polygon(100% 0, 100% 100%, 26% 100%, 65% 0);
+  }
+
+  .hero__inner {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 24px;
+  }
+
+  .hero__content {
+    padding: 30px 0 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero__title {
+    max-width: 100%;
+  }
+
+  .hero__accent {
+    transform: translateX(0);
+    white-space: normal;
+  }
+
+  .hero__text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero__stats {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .hero__stat {
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+  }
+
+  .hero__button {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .hero__visual {
+    padding: 20px 0 30px;
+  }
+
+  .hero__img {
+    max-width: 70%;
+    margin: 0 auto 20px;
+  }
+
+  .hero__promo {
+    margin-left: 0;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 12px;
+    padding: 16px 20px 20px;
+  }
+
+  .hero__promo-value {
+    align-self: center;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px 0 10px;
+  }
+
+  .hero::before {
+    clip-path: polygon(100% 0, 100% 100%, 12% 100%, 55% 0);
+  }
+
+  .hero__inner {
+    padding: 0 16px;
+  }
+
+  .hero__title {
+    font-size: 2.45rem;
+  }
+
+  .hero__text {
+    font-size: 1rem;
+  }
+
+  .hero__stat {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .hero__stat-value {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .hero__stat-body {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .hero__img {
+    max-width: 85%;
+  }
+
+  .hero__promo-value {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero::before {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 48% 0);
+  }
+
+  .hero__inner {
+    padding: 0 12px;
+  }
+
+  .hero__title {
+    font-size: 1.95rem;
+  }
+
+  .hero__stat-value {
+    font-size: 2rem;
+  }
+
+  .hero__promo-value {
+    font-size: 1.8rem;
+  }
+
+  .hero__promo-title {
+    font-size: 0.9rem;
+  }
+
+  .hero__promo-text {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero {
+    padding: 60px 0 30px;
+  }
+
+  .hero__inner {
+    max-width: 1400px;
+  }
+
+  .hero__promo {
+    margin-left: 60px;
+  }
+}
