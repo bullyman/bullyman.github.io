@@ -16,13 +16,18 @@ document.addEventListener('DOMContentLoaded', function () {
       mobileMenu.classList.add('active');
     };
 
-    const closeMenu = () => {
-      document.body.style.overflow = '';
-      burger.classList.remove('active');
-      mobileMenu.classList.remove('active');
-    };
+const closeMenu = () => {
+  document.body.style.overflow = '';
+  burger.classList.remove('active');
+  mobileMenu.classList.remove('active');
+};
 
-    burger.addEventListener('click', (e) => {
+const mobileMenuClose = document.getElementById('mobileMenuClose');
+if (mobileMenuClose) {
+  mobileMenuClose.addEventListener('click', closeMenu);
+}
+
+burger.addEventListener('click', (e) => {
       e.stopPropagation();
       if (mobileMenu.classList.contains('active')) {
         closeMenu();
@@ -326,38 +331,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ======================== ГАЛЕРЕЯ И ЛАЙТБОКС ========================
   (function () {
-    const baseImages = [
-      { src: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80", caption: "Занятие на автодроме" },
-      { src: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=800&q=80", caption: "Практика в городе" },
-      { src: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80", caption: "Первое занятие" },
-      { src: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80", caption: "Вручение прав" },
-      { src: "https://images.unsplash.com/photo-1580274455191-1c62238fa333?auto=format&fit=crop&w=800&q=80", caption: "Теория в классе" },
-      { src: "https://images.unsplash.com/photo-1525160354320-d8e92641c563?auto=format&fit=crop&w=800&q=80", caption: "Ученица за рулём" },
-      { src: "https://images.unsplash.com/photo-1503853582560-8c3e46b0831b?auto=format&fit=crop&w=800&q=80", caption: "Разбор ошибок" },
-      { src: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80", caption: "Наши авто" },
-      { src: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?auto=format&fit=crop&w=800&q=80", caption: "Практическое занятие на автодроме" },
-      { src: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80", caption: "Экзамен в ГИБДД" },
-      { src: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=800&q=80", caption: "Учебный автомобиль" },
-      { src: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80", caption: "Современный автопарк" },
-      { src: "https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=800&q=80", caption: "Парковка – сложный элемент" },
-      { src: "https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=800&q=80", caption: "Механика или автомат?" },
-      { src: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80", caption: "Лада Веста в автошколе" },
-      { src: "https://images.unsplash.com/photo-1568605117036-5fe5e7fa0ab7?auto=format&fit=crop&w=800&q=80", caption: "Инструктор и ученик" },
-      { src: "https://images.unsplash.com/photo-1580274455191-1c62238fa333?auto=format&fit=crop&w=800&q=80", caption: "Занятие в классе" },
-      { src: "https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=800&q=80", caption: "Практика на механике" },
-      { src: "https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=800&q=80", caption: "Автошкола зимой" },
-      { src: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80", caption: "Современный автомобиль" }
-    ];
-    const targetCount = 60;
-    const allImages = [...baseImages];
-    for (let i = baseImages.length + 1; i <= targetCount; i++) {
-      const idx = (i - baseImages.length) % baseImages.length;
-      const base = baseImages[idx];
-      allImages.push({
-        src: base.src.replace('w=800', 'w=800&sig=' + i),
-        caption: `Фото ${i}: ${base.caption}`
-      });
-    }
+
+const allImages = [
+  { src: "assets/gallery/01-ph.jpg", caption: "" },
+  { src: "assets/gallery/02-ph.jpg", caption: "" },
+  { src: "assets/gallery/03-ph.jpg", caption: "" },
+  { src: "assets/gallery/04-ph.jpg", caption: "" },
+  { src: "assets/gallery/05-ph.jpg", caption: "" },
+  { src: "assets/gallery/06-ph.jpg", caption: "" },
+  { src: "assets/gallery/07-ph.jpg", caption: "" },
+  { src: "assets/gallery/08-ph.jpg", caption: "" },
+  { src: "assets/gallery/09-ph.jpg", caption: "" },
+  { src: "assets/gallery/10-ph.jpg", caption: "" },
+  { src: "assets/gallery/11-ph.jpg", caption: "" },
+  { src: "assets/gallery/12-ph.jpg", caption: "" },
+  { src: "assets/gallery/13-ph.jpg", caption: "" },
+  { src: "assets/gallery/14-ph.jpg", caption: "" },
+  { src: "assets/gallery/15-ph.jpg", caption: "" },
+  { src: "assets/gallery/16-ph.jpg", caption: "" },
+  { src: "assets/gallery/17-ph.jpg", caption: "" },
+  { src: "assets/gallery/18-ph.jpg", caption: "" },
+  { src: "assets/gallery/19-ph.jpg", caption: "" },
+  { src: "assets/gallery/20-ph.jpg", caption: "" },
+  { src: "assets/gallery/21-ph.jpg", caption: "" },
+  { src: "assets/gallery/22-ph.jpg", caption: "" },
+  { src: "assets/gallery/23-ph.jpg", caption: "" },
+  { src: "assets/gallery/24-ph.jpg", caption: "" }
+];
 
 function getItemsPerPage() {
   const grid = document.getElementById('galleryGrid');

@@ -15,7 +15,7 @@
   <header class="header">
     <div class="header__top container">
       <div class="logo">
-        <img src="logo.svg" alt="БашАвтоАкадемия" class="logo__img">
+        <img src="assets/logo/logo.svg" alt="БашАвтоАкадемия" class="logo__img">
       </div>
       <div class="header__contacts desktop-only">
         <a href="tel:+79373001070" class="header__phone">
@@ -45,9 +45,13 @@
       </nav>
     </div>
   </header>
-    <div class="mobile-menu" id="mobileMenu">
-      <nav class="nav mobile-nav">
-        <a class="nav__link" href="#about">О нас</a>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="mobileMenuClose" type="button" aria-label="Закрыть меню">
+    <span class="mobile-menu__close-line"></span>
+    <span class="mobile-menu__close-line"></span>
+  </button>
+  <nav class="nav mobile-nav">
+    <a class="nav__link" href="#about">О нас</a>
         <a class="nav__link" href="#programs">Обучение</a>
         <a class="nav__link" href="#instructors">Инструкторы</a>
         <a class="nav__link" href="#autos">Автомобили</a>
@@ -92,7 +96,7 @@
         </div>
       </div>
       <div class="hero__visual">
-        <img class="hero__img" src="_attach/lancer.png" alt="Автомобиль">
+        <img class="hero__img" src="assets/hero/lancer.png" alt="Автомобиль">
         <div class="hero__promo">
           <div class="hero__promo-value">−20%</div>
           <div class="hero__promo-body">
@@ -109,7 +113,7 @@
       <h2 class="features__title section-title">почему выбирают нас</h2>
       <div class="features__grid card-grid">
         <div class="card card--slide-hover">
-          <div class="card__media" style="background-image: url('https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?auto=format&fit=crop&w=1200&q=80');"></div>
+          <div class="card__media" style="background-image: url('assets/features/theory.jpg');"></div>
           <h3 class="card__title">доступная теория</h3>
           <div class="card__hover">
             <p class="card__text">Учите ПДД легко, никаких скучных лекций, билеты ПДД с разбором ошибок.</p>
@@ -118,7 +122,7 @@
           <div class="card__corner"></div>
         </div>
         <div class="card card--slide-hover">
-          <div class="card__media" style="background-image: url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80');"></div>
+          <div class="card__media" style="background-image: url('assets/features/autos.jpg');"></div>
           <h3 class="card__title">наши автомобили</h3>
           <div class="card__hover">
             <p class="card__text">Практика на достойных автомобилях механика и автомат на выбор. Все машины оборудованы дополнительными педалями.</p>
@@ -127,7 +131,7 @@
           <div class="card__corner"></div>
         </div>
         <div class="card card--slide-hover">
-          <div class="card__media" style="background-image: url('https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=80');"></div>
+          <div class="card__media" style="background-image: url('assets/features/schedule.jpg');"></div>
           <h3 class="card__title">удобный график</h3>
           <div class="card__hover">
             <p class="card__text">Занимайтесь утром, днем или вечером. Подберем удобное время с инструктором, совмещайте с работой или учебой.</p>
@@ -136,7 +140,7 @@
           <div class="card__corner"></div>
         </div>
         <div class="card card--slide-hover">
-          <div class="card__media" style="background-image: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1200&q=80');"></div>
+          <div class="card__media" style="background-image: url('assets/features/exam-rate.jpg');"></div>
           <h3 class="card__title">Высокий процент сдачи</h3>
           <div class="card__hover">
             <p class="card__text">Более 90% наших учеников успешно сдают экзамен с первой попытки. Мы готовим к реальному движению, а не просто катаем вас по кругу.</p>
@@ -145,7 +149,7 @@
           <div class="card__corner"></div>
         </div>
         <div class="card card--slide-hover">
-          <div class="card__media" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80');"></div>
+          <div class="card__media" style="background-image: url('assets/features/instructors.jpg');"></div>
           <h3 class="card__title">наши инструкторы</h3>
           <div class="card__hover">
             <p class="card__text">Средний стаж инструкторов — 7 лет, все имеют сертификаты и регулярно повышают квалификацию. Вежливые и терпеливые.</p>
@@ -154,7 +158,7 @@
           <div class="card__corner"></div>
         </div>
         <div class="card card--slide-hover">
-          <div class="card__media" style="background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80');"></div>
+          <div class="card__media" style="background-image: url('assets/features/reviews.jpg');"></div>
           <h3 class="card__title">отзывы наших учеников</h3>
           <div class="card__hover">
             <p class="card__text">Если у вас есть сомнения, просто почитайте реальные отзывы наших учеников, мы есть на Yandex, Авито, 2ГИС.</p>
@@ -164,7 +168,7 @@
         </div>
         <div class="card card--fullwidth card--b card--feature">
           <div class="card__media card__media--banner card__media--with-overlay">
-            <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=1600&q=80" alt="Условия обучения">
+            <img src="assets/features/conditions-banner.jpg" alt="Условия обучения">
             <h3 class="card__title-overlay">Условия обучения</h3>
           </div>
           <div class="card__text">
@@ -193,7 +197,7 @@
       <h2 class="services__title section-title">программы обучения</h2>
       <div class="card card--fullwidth card--b card--service">
         <div class="card__media card__media--banner card__media--with-overlay">
-          <img src="src="_attach/photo_tr.avif" alt="Теоретическое обучение">
+          <img src="assets/services/theory-banner.jpg" alt="Теоретическое обучение">
           <h3 class="card__title-overlay">Теоретическое обучение</h3>
         </div>
         <p class="card__text">Полный пакет: теория, практика, подготовка к экзаменам в ГИБДД. Индивидуальный график и персональный куратор.</p>
@@ -206,7 +210,7 @@
       <div class="services__grid">
         <div class="card card--service card--b">
           <div class="card__media card__media--banner card__media--with-overlay">
-            <img src="_attach/photo_mt.avif" alt="категория B Механика">
+            <img src="assets/services/mechanics.jpg" alt="категория B Механика">
             <h3 class="card__title-overlay">категория B Механика</h3>
           </div>
           <p class="card__text">Легковой автомобиль. 3 месяца теории + 56 часов практики.</p>
@@ -218,7 +222,7 @@
         </div>
         <div class="card card--service card--b">
           <div class="card__media card__media--banner card__media--with-overlay">
-            <img src="_attach/photo_at.avif" alt="категория B Автомат">
+            <img src="assets/services/automatic.jpg" alt="категория B Автомат">
             <h3 class="card__title-overlay">категория B Автомат</h3>
           </div>
           <p class="card__text">Легковой автомобиль. 3 месяца теории + 56 часов практики.</p>
@@ -240,42 +244,42 @@
           <div class="instructors-slider__track">
             <div class="instructors-slide">
               <div class="card card--instructor">
-                <div class="card__photo"><img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=200&q=80" alt="Иван Петров"></div>
+                <div class="card__photo"><img src="assets/instructors/petrov.jpg" alt="Иван Петров"></div>
                 <h3 class="card__title">Иван Петров</h3>
                 <p class="card__text">Инструктор по вождению, стаж 12 лет. Категории B, C. Обучает безопасному стилю вождения.</p>
               </div>
             </div>
             <div class="instructors-slide">
               <div class="card card--instructor">
-                <div class="card__photo"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80" alt="Елена Смирнова"></div>
+                <div class="card__photo"><img src="assets/instructors/smirnova.jpg" alt="Елена Смирнова"></div>
                 <h3 class="card__title">Елена Смирнова</h3>
                 <p class="card__text">Инструктор с 8-летним стажем. Специализация — автомат, городской трафик. Спокойная и терпеливая.</p>
               </div>
             </div>
             <div class="instructors-slide">
               <div class="card card--instructor">
-                <div class="card__photo"><img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=200&q=80" alt="Алексей Иванов"></div>
+                <div class="card__photo"><img src="assets/instructors/ivanov.jpg" alt="Алексей Иванов"></div>
                 <h3 class="card__title">Алексей Иванов</h3>
                 <p class="card__text">Мастер спорта по автоспорту. Обучает контраварийному вождению и сложным манёврам.</p>
               </div>
             </div>
             <div class="instructors-slide">
               <div class="card card--instructor">
-                <div class="card__photo"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Мария Кузнецова"></div>
+                <div class="card__photo"><img src="assets/instructors/kuznetsova.jpg" alt="Мария Кузнецова"></div>
                 <h3 class="card__title">Мария Кузнецова</h3>
                 <p class="card__text">Инструктор для начинающих, спокойная и понятная подача. Стаж 6 лет. Помогает преодолеть страх.</p>
               </div>
             </div>
             <div class="instructors-slide">
               <div class="card card--instructor">
-                <div class="card__photo"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Дмитрий Соколов"></div>
+                <div class="card__photo"><img src="assets/instructors/sokolov.jpg" alt="Дмитрий Соколов"></div>
                 <h3 class="card__title">Дмитрий Соколов</h3>
                 <p class="card__text">Обучает на механике, подготовка к экзамену в ГИБДД с первого раза. Стаж 10 лет.</p>
               </div>
             </div>
             <div class="instructors-slide">
               <div class="card card--instructor">
-                <div class="card__photo"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Ольга Новикова"></div>
+                <div class="card__photo"><img src="assets/instructors/novikova.jpg" alt="Ольга Новикова"></div>
                 <h3 class="card__title">Ольга Новикова</h3>
                 <p class="card__text">Психолог вождения, помогает преодолеть страх. Индивидуальный подход, бережное обучение.</p>
               </div>
@@ -298,7 +302,7 @@
         <div class="autos-slider__viewport">
           <div class="autos-slider__track">
             <article class="autos-slide is-active">
-              <div class="autos-slide__media"><img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1200&q=80" alt="Hyundai Solaris"></div>
+              <div class="autos-slide__media"><img src="assets/autos/solaris.jpg" alt="Hyundai Solaris"></div>
               <div class="autos-slide__content">
                 <div class="autos-slide__plate autos-slide__plate--top">Hyundai Solaris</div>
                 <p class="autos-slide__text">Комфортный седан для уверенного старта. Доступен для обучения на механике и автомате.</p>
@@ -306,7 +310,7 @@
               </div>
             </article>
             <article class="autos-slide">
-              <div class="autos-slide__media"><img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80" alt="Kia Rio"></div>
+              <div class="autos-slide__media"><img src="assets/autos/rio.jpg" alt="Kia Rio"></div>
               <div class="autos-slide__content">
                 <div class="autos-slide__plate autos-slide__plate--top">Kia Rio</div>
                 <p class="autos-slide__text">Надёжный и манёвренный автомобиль, отлично подходит для городского режима обучения.</p>
@@ -314,7 +318,7 @@
               </div>
             </article>
             <article class="autos-slide">
-              <div class="autos-slide__media"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="Skoda Octavia"></div>
+              <div class="autos-slide__media"><img src="assets/autos/octavia.jpg" alt="Skoda Octavia"></div>
               <div class="autos-slide__content">
                 <div class="autos-slide__plate autos-slide__plate--top">Skoda Octavia</div>
                 <p class="autos-slide__text">Просторный автомобиль с предсказуемым управлением и комфортной посадкой.</p>
@@ -322,7 +326,7 @@
               </div>
             </article>
             <article class="autos-slide">
-              <div class="autos-slide__media"><img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1200&q=80" alt="Volkswagen Polo"></div>
+              <div class="autos-slide__media"><img src="assets/autos/polo.jpg" alt="Volkswagen Polo"></div>
               <div class="autos-slide__content">
                 <div class="autos-slide__plate autos-slide__plate--top">Volkswagen Polo</div>
                 <p class="autos-slide__text">Удобный вариант для отработки городских маршрутов, парковки и базовых манёвров.</p>
@@ -330,7 +334,7 @@
               </div>
             </article>
             <article class="autos-slide">
-              <div class="autos-slide__media"><img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=1200&q=80" alt="Renault Logan"></div>
+              <div class="autos-slide__media"><img src="assets/autos/logan.jpg" alt="Renault Logan"></div>
               <div class="autos-slide__content">
                 <div class="autos-slide__plate autos-slide__plate--top">Renault Logan</div>
                 <p class="autos-slide__text">Практичный седан с простой и понятной управляемостью для базовой практики.</p>
@@ -338,7 +342,7 @@
               </div>
             </article>
             <article class="autos-slide">
-              <div class="autos-slide__media"><img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80" alt="Lada Vesta"></div>
+              <div class="autos-slide__media"><img src="assets/autos/vesta.jpg" alt="Lada Vesta"></div>
               <div class="autos-slide__content">
                 <div class="autos-slide__plate autos-slide__plate--top">Lada Vesta</div>
                 <p class="autos-slide__text">Современный автомобиль для комфортного обучения в разных дорожных условиях.</p>
@@ -407,7 +411,7 @@
           <div class="review-card">
             <div class="review-card__header">
               <div class="review-card__avatar">
-                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Анна">
+                <img src="assets/reviews/female.svg" alt="Анна">
               </div>
               <div class="review-card__info">
                 <div class="review-card__name">Анна С.</div>
@@ -419,7 +423,7 @@
           <div class="review-card">
             <div class="review-card__header">
               <div class="review-card__avatar">
-                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Дмитрий">
+                <img src="assets/reviews/male.svg" alt="Дмитрий">
               </div>
               <div class="review-card__info">
                 <div class="review-card__name">Дмитрий К.</div>
@@ -431,7 +435,7 @@
           <div class="review-card">
             <div class="review-card__header">
               <div class="review-card__avatar">
-                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Екатерина">
+                <img src="assets/reviews/female.svg" alt="Екатерина">
               </div>
               <div class="review-card__info">
                 <div class="review-card__name">Екатерина В.</div>
@@ -443,7 +447,7 @@
           <div class="review-card">
             <div class="review-card__header">
               <div class="review-card__avatar">
-                <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Максим">
+                <img src="assets/reviews/male.svg" alt="Максим">
               </div>
               <div class="review-card__info">
                 <div class="review-card__name">Максим Т.</div>
@@ -482,18 +486,19 @@
       
       <div class="contacts__map-fullwidth">
         <div class="map-container">
-          <iframe 
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c6f7e8a9b0c1d2e3f4g5h6i7j8k9l0m&source=constructor" 
-            width="100%" 
-            height="400" 
-            frameborder="0"
-            allowfullscreen>
-          </iframe>
+<iframe 
+    src="https://yandex.ru/map-widget/v1/?um=constructor%3A99bf0576e9b8748e5db1cb69053bfd010c30e61d8fdbc57920cb9fe8f5ccf51b&amp;source=constructor"
+  width="100%" 
+  height="400" 
+  frameborder="0"
+  title="Карта: автошкола БашАвтоАкадемия, г. Уфа, ул. Коммунистическая 65"
+  allowfullscreen>
+</iframe>
         </div>
       </div>
       <div class="contacts__footer">
         <div class="logo">
-          <img src="logo.svg" alt="БашАвтоАкадемия" class="logo__img">
+          <img src="assets/logo/logo.svg" alt="БашАвтоАкадемия" class="logo__img">
         </div>
         <div class="contacts__footer-center">
           <div class="contacts__footer-links">

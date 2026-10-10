@@ -3,7 +3,7 @@
    ========================================================================== */
 .hero {
   position: relative;
-  overflow-x: hidden;
+  overflow-x: clip;
   background: #f4f8f1;
   border-bottom: 1px solid var(--border-soft);
   padding: 40px 0 20px; /* высота определяется содержимым */
